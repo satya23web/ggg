@@ -1,5 +1,5 @@
 import pandas as pd
-df=pd.read_csv(r"C:\Users\kumar\Downloads\wine+quality\winequality-red.csv",delimiter=";")
+df=pd.read_csv(r"winequality-red.csv",delimiter=";")
 df.head(10)
 sns.heatmap(correlation_matrix,annot=True,cmap="coolwarm",fmt=".2f")
 selected_features=['volatile acidity','alcohol','sulphates','citric acid']
